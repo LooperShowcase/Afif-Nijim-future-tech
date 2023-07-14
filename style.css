@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(103, 37, 225);
+}
+div {
+  background-color: rgb(103, 37, 225);
+}
+#Enter-Button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: rgb(103, 37, 225);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(103, 37, 225, 0.1);
+  transition: background-color 0.2s;
+  height: 5%;
+  margin-bottom: 13px;
+}
+#Input-Text {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 0px 10px rgba(0, 85, 255, 0.8);
+}
+.container {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+}
+#Enter-Button:hover {
+  background-color: bisque;
+}
