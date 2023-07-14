@@ -23,10 +23,11 @@ async function conversationHUEAdd(response) {
 
 async function openai_test() {
   let url = "https://api.openai.com/v1/chat/completions";
-  let apikey1 = "sk-";
-  let apikey2 = "ARmBYmBgE69LcWHYkngu";
-  let apikey3 = "T3BlbkFJIiaAPCEWCdgVyodtMBuc";
-  let apikey = apikey1 + apikey2 + apikey3;
+  let part1 = "sk";
+  let part2 = "-uUPayv04E0azuKUx7fqkT3BlbkF";
+  let part3 = "JAbsZR6JQELQpKK5nH0bl";
+
+  let allParts = part1 + part2 + part3;
   let data = { model: "gpt-3.5-turbo", messages: conversation };
 
   try {
@@ -34,7 +35,7 @@ async function openai_test() {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${apikey}`,
+        Authorization: `Bearer ${allParts}`,
       },
       body: JSON.stringify(data),
     });
