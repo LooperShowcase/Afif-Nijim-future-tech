@@ -1,37 +1,77 @@
 body {
-  background-color: rgb(103, 37, 225);
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
-div {
-  background-color: rgb(103, 37, 225);
-}
-#Enter-Button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: rgb(103, 37, 225);
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(103, 37, 225, 0.1);
-  transition: background-color 0.2s;
-  height: 5%;
-  margin-bottom: 13px;
-}
-#Input-Text {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 10px 0px 10px rgba(0, 85, 255, 0.8);
-}
+
 .container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
-  height: 150vh;
+  margin-top: 20px;
 }
-#Enter-Button:hover {
-  background-color: bisque;
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 70%;
+}
+
+#Enter-Button {
+  margin-left: 10px;
+}
+
+#webcam-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#label-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#label-container > div {
+  margin: 5px;
+  padding: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#number {
+  text-align: center;
+  font-size: 48px;
+  color: #333;
+  margin-top: 40px;
 }
